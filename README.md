@@ -1,7 +1,7 @@
 # Plagiarism_Detector
 ## Key idea: Quickly detecting plagiarisms between documents using K-Shingling, minHash and LSH techniques.
 
-###More Info: Having a big corpus/dataset of documets as source, the algorith tries to detect quickly pairs of documents which may be plagiarised.
+### More Info: Having a big corpus/dataset of documets as source, the algorith tries to detect quickly pairs of documents which may be plagiarised.
 
 
 
