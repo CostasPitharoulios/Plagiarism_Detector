@@ -9,10 +9,11 @@
 #### At this part of the code, I am preprocessing all texts from the given documents.
 
 * **Transforming all the letters in lower case.**  
-  * I am doing this because I want the computer to be able to count the words spelled with the same letters as the same words.    (ex. “Hello” == “hello”).
--**Tokenization** - This means that each word becomes a token.
-**Removing Sumbols** - Removing all symbols and numbers from each token.
-**Lemmatisation** - In this phase, each word - token is getting lemmatised based on loaded vocabularies. The reason why I didn’t chose stemming instead is because I am looking for plagiarisms and plagiarisms may often happen with totally different words from the same lemma. But the  truth is that in order to check their results, I used them both and the interesting thing is that stemming took me much more time which I was nor expecting to be honest, because I think that lemmatisation is a more sophisticated method since it does not just cut beginnings or endings of words, but instead it also uses vocabularies to find lemmas.
+I am doing this because I want the computer to be able to count the words spelled with the same letters as the same words.    (ex. “Hello” == “hello”).
+* **Tokenization** 
+This means that each word becomes a token.
+* **Removing Sumbols** - Removing all symbols and numbers from each token.
+* **Lemmatisation** - In this phase, each word - token is getting lemmatised based on loaded vocabularies. The reason why I didn’t chose stemming instead is because I am looking for plagiarisms and plagiarisms may often happen with totally different words from the same lemma. But the  truth is that in order to check their results, I used them both and the interesting thing is that stemming took me much more time which I was nor expecting to be honest, because I think that lemmatisation is a more sophisticated method since it does not just cut beginnings or endings of words, but instead it also uses vocabularies to find lemmas.
 
 ### K - Shingling
 So, after reading the text of each document and preprocessing it, I am using the technique of K-Shingling. In other words, for each document I am keeping a set of all possible consecutive substring of length k found within it. I tried different values of k. Like k=3 or k=5 or k=10 or k=20 but there was not any big difference, so I have just chosen k=5 for my calculations. 
